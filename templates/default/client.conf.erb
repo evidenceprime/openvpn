@@ -11,3 +11,4 @@ cert <%= @username %>.crt
 key <%= @username %>.key
 comp-lzo
 verb 3
+<%= node['openvpn']['extra_client_conf'] %>

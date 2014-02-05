@@ -40,6 +40,9 @@ default['openvpn']['group']           = case node['platform_family']
                                           'nogroup'
                                         end
 
+# set to append content to generated client.conf
+default['openvpn']['extra_client_conf'] = ''
+
 # Used by helper library to generate certificates/keys
 default['openvpn']['key']['ca_expire'] = 3650
 default['openvpn']['key']['expire']    = 3650
